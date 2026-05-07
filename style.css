@@ -74,6 +74,30 @@ body {
   color: var(--text) !important;
 }
 
+.navbar-toggler {
+  border: 1px solid var(--border-soft);
+  color: var(--text);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler i {
+  color: var(--text);
+}
+
+body[data-theme="dark"] .navbar-toggler,
+body:not([data-theme]) .navbar-toggler {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+body[data-theme="dark"] .navbar-toggler i,
+body:not([data-theme]) .navbar-toggler i {
+  color: #ffffff;
+}
+
 .navbar-brand-text {
   font-size: 1.35rem;
   font-weight: 700;
