@@ -742,6 +742,10 @@ body[data-theme="light"] #themeToggle i {
   color: #f4b400;
 }
 
+.hero-content{
+    text-align:left;
+}
+
 @media (max-width:991px){
 
 .hero .row{
