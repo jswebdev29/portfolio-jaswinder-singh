@@ -741,3 +741,43 @@ footer {
 body[data-theme="light"] #themeToggle i {
   color: #f4b400;
 }
+
+@media (max-width: 991.98px) {
+    .hero {
+        min-height: auto;
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    .hero .row {
+        text-align: center;
+    }
+
+    .hero .d-flex {
+        justify-content: center;
+    }
+
+    .hero-card {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    .container{
+        max-width:95%;
+    }
+
+    .hero .row{
+        align-items:center;
+    }
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .profile-image{
+        width:240px;
+        height:240px;
+    }
+}
