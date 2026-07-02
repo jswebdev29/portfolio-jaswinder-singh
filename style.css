@@ -742,7 +742,6 @@ body[data-theme="light"] #themeToggle i {
   color: #f4b400;
 }
 
-
 @media (max-width: 991px) {
   .hero {
     padding-top: 140px;
@@ -757,29 +756,12 @@ body[data-theme="light"] #themeToggle i {
     padding: 22px;
   }
 
-    .hero .row{
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-    }
+  .hero .row {
+    align-items: center;
+  }
 
-    .hero .col-lg-6{
-        width:50%;
-        flex:0 0 50%;
-        max-width:50%;
-    }
-
-    .hero-content{
-        text-align:left;
-    }
-
-    .hero-card{
-        margin:0 auto;
-    }
-
-    .profile-image{
-        width:180px;
-        height:180px;
-    }
-
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
 }
