@@ -756,4 +756,30 @@ body[data-theme="light"] #themeToggle i {
   .contact-panel {
     padding: 22px;
   }
+
+    .hero .row{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+    }
+
+    .hero .col-lg-6{
+        width:50%;
+        flex:0 0 50%;
+        max-width:50%;
+    }
+
+    .hero-content{
+        text-align:left;
+    }
+
+    .hero-card{
+        margin:0 auto;
+    }
+
+    .profile-image{
+        width:180px;
+        height:180px;
+    }
+
 }
