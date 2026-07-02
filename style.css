@@ -742,26 +742,40 @@ body[data-theme="light"] #themeToggle i {
   color: #f4b400;
 }
 
-@media (max-width: 991px) {
-  .hero {
-    padding-top: 140px;
-  }
+@media (max-width:991px){
 
-  .navbar-nav .nav-link {
-    margin-left: 0;
-    margin-right: 0;
-  }
+.hero .row{
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
+}
 
-  .contact-panel {
-    padding: 22px;
-  }
+.hero .row > div:first-child{
+    width:60%;
+    flex:0 0 60%;
+    max-width:60%;
+}
 
-  .hero .row {
-    align-items: center;
-  }
+.hero .row > div:last-child{
+    width:40%;
+    flex:0 0 40%;
+    max-width:40%;
+}
 
-  .profile-image {
-    width: 180px;
-    height: 180px;
-  }
+.hero h1{
+    font-size:28px;
+}
+
+.hero .lead{
+    font-size:15px;
+}
+
+.profile-image{
+    width:160px;
+    height:160px;
+}
+
+.hero-card{
+    padding:15px;
+}
 }
