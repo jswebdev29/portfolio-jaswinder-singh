@@ -742,17 +742,36 @@ body[data-theme="light"] #themeToggle i {
   color: #f4b400;
 }
 
+
 /* =========================================
-   RESPONSIVE HERO SPACING FIX
+   FINAL RESPONSIVE HERO FIX
    ========================================= */
 
 .hero {
   min-height: auto;
-  padding-top: 105px;
-  padding-bottom: 55px;
+  padding-top: 100px;
+  padding-bottom: 45px;
 }
-@media (max-width: 767px) {
 
+.hero .row {
+  align-items: center;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .hero {
+    min-height: auto;
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
+
+  .hero-card {
+    margin-top: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
   .navbar {
     min-height: 68px;
     padding-top: 0.6rem;
@@ -771,7 +790,7 @@ body[data-theme="light"] #themeToggle i {
   .hero {
     min-height: auto;
     padding-top: 82px;
-    padding-bottom: 35px;
+    padding-bottom: 30px;
   }
 
   .hero h1 {
@@ -785,7 +804,7 @@ body[data-theme="light"] #themeToggle i {
   }
 
   .hero-card {
-    margin-top: 10px;
+    margin: 15px auto 0;
     max-width: 310px;
   }
 
@@ -795,11 +814,11 @@ body[data-theme="light"] #themeToggle i {
   }
 }
 
+/* Small mobile */
 @media (max-width: 480px) {
-
   .hero {
     padding-top: 76px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
 
   .hero h1 {
@@ -812,7 +831,7 @@ body[data-theme="light"] #themeToggle i {
 
   .hero-card {
     max-width: 285px;
-    margin-top: 10px;
+    margin-top: 12px;
   }
 
   .profile-image {
@@ -820,4 +839,3 @@ body[data-theme="light"] #themeToggle i {
     height: 205px;
   }
 }
-
