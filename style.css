@@ -742,3 +742,255 @@ body[data-theme="light"] #themeToggle i {
   color: #f4b400;
 }
 
+/* =========================================
+   RESPONSIVE HERO SPACING FIX
+   ========================================= */
+
+/* Desktop */
+.hero {
+  min-height: auto;
+  padding-top: 105px;
+  padding-bottom: 70px;
+}
+
+.hero .row {
+  min-height: calc(100vh - 105px);
+  align-items: center;
+}
+
+.hero-card {
+  margin-top: 0;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .hero {
+    padding-top: 95px;
+    padding-bottom: 55px;
+  }
+
+  .hero .row {
+    min-height: calc(100vh - 95px);
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.12;
+  }
+
+  .hero .lead {
+    font-size: 1.25rem;
+    line-height: 1.55;
+  }
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 991px) {
+  .hero {
+    min-height: auto;
+    padding-top: 105px;
+    padding-bottom: 50px;
+  }
+
+  .hero .row {
+    min-height: auto;
+  }
+
+  .hero-content {
+    text-align: left;
+  }
+
+  .hero-card {
+    margin-top: 10px;
+    max-width: 340px;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 767px) {
+
+  .navbar {
+    min-height: 68px;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+  }
+
+  .navbar-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar-brand-text {
+    font-size: 1.15rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 88px;
+    padding-bottom: 35px;
+  }
+
+  .hero .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero .row {
+    min-height: auto;
+    margin-top: 0;
+  }
+
+  .hero .col-lg-7,
+  .hero .col-lg-5 {
+    width: 100%;
+  }
+
+  .hero-badge {
+    font-size: 0.82rem;
+    margin-bottom: 12px !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 9vw, 2.65rem);
+    line-height: 1.12;
+    margin-bottom: 18px !important;
+  }
+
+  .hero .lead {
+    font-size: 1rem;
+    line-height: 1.55;
+    margin-bottom: 22px !important;
+  }
+
+  .hero .lead br {
+    display: none;
+  }
+
+  .hero .d-flex {
+    gap: 10px !important;
+  }
+
+  .btn-custom {
+    padding: 10px 17px;
+    font-size: 0.95rem;
+    border-radius: 11px;
+  }
+
+  .social-icons {
+    margin-top: 22px !important;
+  }
+
+  .hero-card {
+    width: 100%;
+    max-width: 310px;
+    margin: 20px auto 0;
+    padding: 20px 16px 22px;
+    border-radius: 17px;
+  }
+
+  .profile-image {
+    width: 225px;
+    height: 225px;
+    margin-bottom: 10px;
+  }
+
+  .hero-card-tagline {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+  .hero {
+    padding-top: 82px;
+    padding-bottom: 30px;
+  }
+
+  .hero h1 {
+    font-size: 2.05rem;
+    line-height: 1.13;
+  }
+
+  .hero .lead {
+    font-size: 0.96rem;
+    line-height: 1.5;
+  }
+
+  .hero .d-flex {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px !important;
+  }
+
+  .hero .d-flex .btn {
+    width: 100%;
+  }
+
+  .hero .d-flex .btn:last-child {
+    grid-column: 1 / -1;
+    width: 50%;
+  }
+
+  .social-icons {
+    margin-top: 20px !important;
+  }
+
+  .hero-card {
+    max-width: 285px;
+    margin-top: 18px;
+  }
+
+  .profile-image {
+    width: 205px;
+    height: 205px;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL DEVICES
+   ========================================= */
+
+@media (max-width: 360px) {
+
+  .hero {
+    padding-top: 78px;
+  }
+
+  .hero h1 {
+    font-size: 1.85rem;
+  }
+
+  .hero .lead {
+    font-size: 0.9rem;
+  }
+
+  .hero-card {
+    max-width: 265px;
+  }
+
+  .profile-image {
+    width: 185px;
+    height: 185px;
+  }
+}
+
