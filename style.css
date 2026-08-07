@@ -743,99 +743,144 @@ body[data-theme="light"] #themeToggle i {
 }
 
 
-/* =========================================
-   FINAL RESPONSIVE HERO FIX
-   ========================================= */
+/* =========================================================
+   FINAL HERO LAYOUT FIX
+   Remove unwanted top/bottom empty space
+   ========================================================= */
 
+/* Main hero */
 .hero {
-  min-height: auto;
-  padding-top: 100px;
-  padding-bottom: 45px;
+    min-height: 0 !important;
+    height: auto !important;
+    padding-top: 75px !important;
+    padding-bottom: 45px !important;
 }
 
+/* IMPORTANT: Don't stretch the Bootstrap row */
 .hero .row {
-  align-items: center;
+    min-height: 0 !important;
+    height: auto !important;
+    align-items: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
-/* Tablet */
-@media (max-width: 991px) {
-  .hero {
-    min-height: auto;
-    padding-top: 90px;
-    padding-bottom: 40px;
-  }
-
-  .hero-card {
-    margin-top: 0;
-  }
+/* Hero content */
+.hero-content {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
-/* Mobile */
+/* Hero card */
+.hero-card {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 992px) {
+
+    .hero {
+        min-height: 0 !important;
+        height: auto !important;
+        padding-top: 70px !important;
+        padding-bottom: 45px !important;
+    }
+
+    .hero .row {
+        min-height: 0 !important;
+        height: auto !important;
+    }
+
+    .hero-content {
+        transform: none !important;
+    }
+
+    .hero-card {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .profile-image {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .hero {
+        min-height: 0 !important;
+        height: auto !important;
+        padding-top: 70px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .hero .row {
+        min-height: 0 !important;
+        height: auto !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width: 767px) {
-  .navbar {
-    min-height: 68px;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-  }
 
-  .navbar-logo {
-    width: 40px;
-    height: 40px;
-  }
+    .hero {
+        min-height: 0 !important;
+        height: auto !important;
+        padding-top: 45px !important;
+        padding-bottom: 30px !important;
+    }
 
-  .navbar-brand-text {
-    font-size: 1.15rem;
-  }
+    .hero .row {
+        min-height: 0 !important;
+        height: auto !important;
+    }
 
-  .hero {
-    min-height: auto;
-    padding-top: 82px;
-    padding-bottom: 30px;
-  }
+    .hero-content {
+        padding: 0 !important;
+    }
 
-  .hero h1 {
-    font-size: clamp(2rem, 9vw, 2.7rem);
-    line-height: 1.12;
-  }
+    .hero-card {
+        margin-top: 25px !important;
+    }
 
-  .hero .lead {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  .hero-card {
-    margin: 15px auto 0;
-    max-width: 310px;
-  }
-
-  .profile-image {
-    width: 225px;
-    height: 225px;
-  }
+    .profile-image {
+        width: 220px;
+        height: 220px;
+    }
 }
 
-/* Small mobile */
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
 @media (max-width: 480px) {
-  .hero {
-    padding-top: 76px;
-    padding-bottom: 25px;
-  }
 
-  .hero h1 {
-    font-size: 2.05rem;
-  }
+    .hero {
+        padding-top: 35px !important;
+        padding-bottom: 25px !important;
+    }
 
-  .hero .lead {
-    font-size: 0.95rem;
-  }
+    .hero-card {
+        margin-top: 20px !important;
+    }
 
-  .hero-card {
-    max-width: 285px;
-    margin-top: 12px;
-  }
-
-  .profile-image {
-    width: 205px;
-    height: 205px;
-  }
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
 }
