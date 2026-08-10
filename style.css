@@ -741,3 +741,26 @@ footer {
 body[data-theme="light"] #themeToggle i {
   color: #f4b400;
 }
+
+
+@media (min-width:768px) and (max-width:1024px){
+
+    .hero{
+        min-height:auto;
+        padding-top:120px;
+        padding-bottom:60px;
+    }
+
+    .hero .row{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero .d-flex{
+        justify-content:center;
+    }
+
+    .hero-card{
+        margin:40px auto 0;
+    }
+}
